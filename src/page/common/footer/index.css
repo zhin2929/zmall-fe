@@ -1,0 +1,21 @@
+/**
+ * Author: zhin
+ * Date: 2017/10/28 0:04
+ */
+
+.footer {
+  padding-bottom: 10px;
+}
+.links {
+  text-align: center;
+  color: #666;
+  line-height: 30px;
+}
+.footer .links .link {
+  padding: 0 10px;
+}
+.copyright {
+  text-align: center;
+  color: #666;
+  line-height: 30px;
+}
