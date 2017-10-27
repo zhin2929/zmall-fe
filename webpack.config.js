@@ -28,19 +28,32 @@ var config = {
   },
   output: {
     path: './dist',
-    publicPath : '/dist',
+    publicPath: '/dist',
     filename: 'js/[name].js'
   },
   externals: {
     'jquery': 'window.jQuery'
   },
   module: {
-    loader: [
-      {test: /\.css$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
-      { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/,
-        loader: 'url-loader?limit=1000&name=resource/[name].[ext]' }
+    loaders: [
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+      },
+      {
+        test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/,
+        loader: 'url-loader?limit=1000&name=resource/[name].[ext]'
+      }
     ]
+  },
+  resolve : {
+    alias : {
+      node_modules    : __dirname + '/node_modules',
+      util            : __dirname + '/src/util',
+      page            : __dirname + '/src/page',
+      service         : __dirname + '/src/service',
+      image           : __dirname + '/src/image'
+    }
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
