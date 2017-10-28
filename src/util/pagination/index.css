@@ -1,0 +1,42 @@
+/**
+ * Author: zhin
+ * Date: 2017/10/28 14:42
+ */
+
+.pg-content {
+  text-align: center;
+  color: #333;
+}
+
+.pg-content .pg-item {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 15px;
+  margin: 0 2px;
+  border: 1px solid #cc0d16;
+  background: #eee;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pg-content .pg-item.disabled {
+  color: #ccc;
+  background: none;
+  cursor: auto;
+}
+
+.pg-content .pg-item.active {
+  border: 1px solid #171ef6;
+  background: none;
+  cursor: pointer;
+}
+
+.pg-content .pg-total {
+  margin-left: 10px;
+  background: none;
+  cursor: auto;
+}
