@@ -10,7 +10,6 @@ var _mm = require('util/mm.js');
 var _cart = {
   // 获取购物车数量
   getCartCount : function (resolve, reject) {
-    console.log("加载购物车数量");
     _mm.request({
       url     : _mm.getServerUrl('/cart/get_cart_product_count.do'),
       success : resolve,
