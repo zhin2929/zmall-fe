@@ -73,6 +73,25 @@ var _user = {
       error   : reject
     });
   },
+  // 获取用户信息
+  getUserInfo : function(resolve, reject){
+    _mm.request({
+      url     : _mm.getServerUrl('/user/get_information.do'),
+      method  : 'POST',
+      success : resolve,
+      error   : reject
+    });
+  },
+  // 更新个人信息
+  updateUserInfo : function(userInfo, resolve, reject){
+    _mm.request({
+      url     : _mm.getServerUrl('/user/update_information.do'),
+      data    : userInfo,
+      method  : 'POST',
+      success : resolve,
+      error   : reject
+    });
+  },
   // 检查登录状态
   checkLogin: function (resolve, reject) {
     _mm.request({
