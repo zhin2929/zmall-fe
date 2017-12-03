@@ -44,7 +44,7 @@ var config = {
   },
   output: {
     path: __dirname + '/dist/',
-    publicPath: 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall-fe/dist/',
+    publicPath: '/dist/',
     filename: 'js/[name].js'
   },
   externals: {
@@ -102,7 +102,7 @@ var config = {
     new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改信息')),
     new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
     new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
-    new HtmlWebpackPlugin(getHtmlConfig('about', '关于MMall'))
+    new HtmlWebpackPlugin(getHtmlConfig('about', '关于zmall'))
   ]
 
 

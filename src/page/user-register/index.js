@@ -17,7 +17,7 @@ var formError = {
     $('.error-item').show().find('.err-msg').text(errMsg);
   },
   hide : function() {
-    $('.error-item').hide();
+    $('.error-item').hide().find(".err-msg").text("");
   }
 };
 

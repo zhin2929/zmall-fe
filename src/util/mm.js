@@ -8,6 +8,7 @@
 var Hogan = require('hogan.js');
 
 var conf = {
+  // serverHost: 'http://localhost:8088'
   serverHost: ''
 };
 
