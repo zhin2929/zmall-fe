@@ -44,7 +44,7 @@ var config = {
   },
   output: {
     path: __dirname + '/dist/',
-    publicPath: 'http://gis.myzmall.xyz/zmall-fe/dist/',
+    publicPath: 'http://s.myzmall.xyz/zmall-fe/dist/',
     filename: 'js/[name].js'
   },
   externals: {
